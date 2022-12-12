@@ -1,0 +1,205 @@
+2022-12-12 09:21:05,866 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:705) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:577) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:413) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:372) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 5 common frames omitted
+2022-12-12 09:21:05,946 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:78) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 6 common frames omitted
+2022-12-12 09:21:05,964 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:705) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:577) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:413) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:372) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 5 common frames omitted
+2022-12-12 09:21:05,974 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:705) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:577) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:413) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:372) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketException: Socket is closed
+	at java.base/java.net.Socket.setSoTimeout(Socket.java:1218) ~[na:na]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.setSoTimeout(BaseSSLSocketImpl.java:638) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.setSoTimeout(SSLSocketImpl.java:74) ~[na:na]
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:140) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 5 common frames omitted
+2022-12-12 09:21:06,002 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:78) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 6 common frames omitted
+2022-12-12 09:21:06,009 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:217) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:78) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.UnknownHostException: No such host is known (ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933) ~[na:na]
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529) ~[na:na]
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377) ~[na:na]
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305) ~[na:na]
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:209) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 6 common frames omitted
+2022-12-12 09:21:35,982 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 4 common frames omitted
+2022-12-12 09:21:36,074 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 4 common frames omitted
+2022-12-12 09:21:36,105 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Exception in monitor thread while connecting to server ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:73) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:183) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157) ~[mongodb-driver-core-4.8.0.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[na:na]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:82) ~[mongodb-driver-core-4.8.0.jar:na]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:68) ~[mongodb-driver-core-4.8.0.jar:na]
+	... 4 common frames omitted
+2022-12-12 09:21:46,273 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55770800, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000b2, setVersion=3, topologyVersion=TopologyVersion{processId=6393039b41a34e3a906bec28, counter=6}, lastWriteDate=Mon Dec 12 09:21:45 IST 2022, lastUpdateTimeNanos=2636632916861500}
+2022-12-12 09:21:46,274 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Discovered replica set primary ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017 with max election id 7fffffff00000000000000b2 and max set version 3
+2022-12-12 09:21:46,284 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=67886800, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639304bb5a7496d7380b4186, counter=3}, lastWriteDate=Mon Dec 12 09:21:45 IST 2022, lastUpdateTimeNanos=2636632928146800}
+2022-12-12 09:21:46,365 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63946ec62ca2e9504bddfb4a', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=149436000, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639302b7291fefb0c5b247d6, counter=4}, lastWriteDate=Mon Dec 12 09:21:45 IST 2022, lastUpdateTimeNanos=2636633009061500}
+2022-12-12 09:24:28,759 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:29:28,565 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:34:28,567 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:39:28,575 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:44:28,581 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:49:28,586 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:54:28,596 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 09:59:28,608 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:04:28,625 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:09:28,677 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:14:28,705 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:19:28,734 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:24:28,747 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:29:28,756 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:34:28,765 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:39:28,773 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:44:28,777 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 10:49:28,793 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-12-12 11:00:20,213 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Starting ProductMicroserviceApplication using Java 17.0.4.1 with PID 116580 (C:\Users\csripras\Downloads\Product-Microservice\Product-Microservice\target\classes started by csripras in C:\Users\csripras\Downloads\Product-Microservice\Product-Microservice)
+2022-12-12 11:00:20,216 [DEBUG] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Running with Spring Boot v3.0.0, Spring v6.0.2
+2022-12-12 11:00:20,218 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-12-12 11:00:20,296 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-12 11:00:20,297 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-12 11:00:21,509 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-12-12 11:00:21,743 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 223 ms. Found 1 MongoDB repository interfaces.
+2022-12-12 11:00:22,542 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2022-12-12 11:00:22,560 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-12-12 11:00:22,560 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-12 11:00:22,644 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-12-12 11:00:22,645 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2346 ms
+2022-12-12 11:00:23,214 [INFO] org.mongodb.driver.client [restartedMain] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.8.0"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.4.1+1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Prasanthi_db', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@22fdf9a5], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@48600733]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.umfkkjm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-13mu44-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4efa2280], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-12-12 11:00:23,237 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017 to client view of cluster
+2022-12-12 11:00:23,288 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017 to client view of cluster
+2022-12-12 11:00:23,290 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017 to client view of cluster
+2022-12-12 11:00:23,433 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-12-12 11:00:24,027 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=437200700, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639304bb5a7496d7380b4186, counter=3}, lastWriteDate=Mon Dec 12 11:00:23 IST 2022, lastUpdateTimeNanos=2642551014876400}
+2022-12-12 11:00:24,059 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=411353500, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000b2, setVersion=3, topologyVersion=TopologyVersion{processId=6393039b41a34e3a906bec28, counter=6}, lastWriteDate=Mon Dec 12 11:00:23 IST 2022, lastUpdateTimeNanos=2642551048370800}
+2022-12-12 11:00:24,060 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Discovered replica set primary ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017 with max election id 7fffffff00000000000000b2 and max set version 3
+2022-12-12 11:00:24,063 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='6396bc6f5466095010bd2da4', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=413429300, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639302b7291fefb0c5b247d6, counter=4}, lastWriteDate=Mon Dec 12 11:00:23 IST 2022, lastUpdateTimeNanos=2642551051560400}
+2022-12-12 11:00:24,860 [INFO] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-12-12 11:00:24,965 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-12 11:00:24,985 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Started ProductMicroserviceApplication in 5.726 seconds (process running for 6.821)
