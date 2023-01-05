@@ -1,0 +1,168 @@
+2023-01-03 11:53:30,709 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Starting ProductMicroserviceApplication using Java 17.0.4.1 on inlen8520029456 with PID 12604 (C:\Users\csripras\Downloads\Product-Microservice\Product-Microservice\target\classes started by csripras in C:\Users\csripras\Downloads\Product-Microservice\Product-Microservice)
+2023-01-03 11:53:30,716 [DEBUG] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-01-03 11:53:30,717 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-01-03 11:53:30,778 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-03 11:53:30,778 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-03 11:53:31,473 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-01-03 11:53:31,601 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 119 ms. Found 2 MongoDB repository interfaces.
+2023-01-03 11:53:31,854 [INFO] org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=8ca4cf66-c52c-364b-916a-3fc6c2b27dbd
+2023-01-03 11:53:32,457 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2023-01-03 11:53:32,467 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-01-03 11:53:32,468 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-03 11:53:32,563 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-01-03 11:53:32,563 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1784 ms
+2023-01-03 11:53:32,800 [INFO] org.mongodb.driver.client [restartedMain] MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.4.1+1"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Prasanthi_db', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@176fc16e]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.umfkkjm.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-13mu44-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2023-01-03 11:53:32,863 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017 to client view of cluster
+2023-01-03 11:53:32,885 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-01-03 11:53:32,895 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017 to client view of cluster
+2023-01-03 11:53:32,896 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-srv-cluster0.umfkkjm.mongodb.net] Adding discovered server ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017 to client view of cluster
+2023-01-03 11:53:32,997 [WARN] org.springframework.data.convert.CustomConversions [restartedMain] Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-01-03 11:53:33,213 [DEBUG] com.eshoppingzone.jwtfilter.JwtRequestFilter [restartedMain] Filter 'jwtRequestFilter' configured for use
+2023-01-03 11:53:33,242 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-01-03 11:53:33,364 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:2, serverValue:3158134}] to ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:1, serverValue:3158134}] to ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:6, serverValue:3119936}] to ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:3, serverValue:3119936}] to ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=226578100, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff00000000000000b2, setVersion=3, topologyVersion=TopologyVersion{processId=6393039b41a34e3a906bec28, counter=6}, lastWriteDate=Tue Jan 03 11:53:33 IST 2023, lastUpdateTimeNanos=145639686014100}
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=228845300, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639304bb5a7496d7380b4186, counter=3}, lastWriteDate=Tue Jan 03 11:53:33 IST 2023, lastUpdateTimeNanos=145639685927000}
+2023-01-03 11:53:33,364 [INFO] org.mongodb.driver.connection [cluster-rtt-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:4, serverValue:3125687}] to ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,365 [INFO] org.mongodb.driver.connection [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Opened connection [connectionId{localValue:5, serverValue:3125687}] to ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,366 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017] Monitor thread successfully connected to server with description ServerDescription{address=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=188113800, setName='atlas-13mu44-shard-0', canonicalAddress=ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, hosts=[ac-ggodjl5-shard-00-00.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017, ac-ggodjl5-shard-00-02.umfkkjm.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=3, topologyVersion=TopologyVersion{processId=639302b7291fefb0c5b247d6, counter=4}, lastWriteDate=Tue Jan 03 11:53:33 IST 2023, lastUpdateTimeNanos=145639685927000}
+2023-01-03 11:53:33,370 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Setting max election id to 7fffffff00000000000000b2 from replica set primary ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,371 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Setting max set version to 3 from replica set primary ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,371 [INFO] org.mongodb.driver.cluster [cluster-ClusterId{value='63b3c9e4fadee677c9273684', description='null'}-ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017] Discovered replica set primary ac-ggodjl5-shard-00-01.umfkkjm.mongodb.net:27017
+2023-01-03 11:53:33,619 [INFO] org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@274f60c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@20888112, org.springframework.security.web.context.SecurityContextPersistenceFilter@173873, org.springframework.security.web.header.HeaderWriterFilter@643cc200, org.springframework.security.web.authentication.logout.LogoutFilter@32d029b2, com.eshoppingzone.jwtfilter.JwtRequestFilter@3371c2a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@240b944c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42cdb560, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@150dbd0e, org.springframework.security.web.session.SessionManagementFilter@20e1ca76, org.springframework.security.web.access.ExceptionTranslationFilter@308cbe16, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@452f35b5]
+2023-01-03 11:53:34,447 [WARN] org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration [restartedMain] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-01-03 11:53:34,692 [INFO] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2023-01-03 11:53:34,834 [WARN] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-03 11:53:34,860 [INFO] org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2023-01-03 11:53:34,951 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2023-01-03 11:53:34,957 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2023-01-03 11:53:34,987 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2023-01-03 11:53:34,987 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2023-01-03 11:53:34,987 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2023-01-03 11:53:34,988 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2023-01-03 11:53:34,988 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2023-01-03 11:53:34,988 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2023-01-03 11:53:34,988 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2023-01-03 11:53:35,219 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2023-01-03 11:53:35,223 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2023-01-03 11:53:35,227 [INFO] com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-03 11:53:35,234 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1672727015233 with initial instances count: 1
+2023-01-03 11:53:35,235 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application PRODUCT-MICROSERVICE with eureka with status UP
+2023-01-03 11:53:35,236 [INFO] com.netflix.discovery.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1672727015236, current=UP, previous=STARTING]
+2023-01-03 11:53:35,238 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT-MICROSERVICE/inlen8520029456.corp.capgemini.com:Product-Microservice:8081: registering service...
+2023-01-03 11:53:35,282 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2023-01-03 11:53:35,283 [INFO] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8081
+2023-01-03 11:53:35,293 [INFO] com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_PRODUCT-MICROSERVICE/inlen8520029456.corp.capgemini.com:Product-Microservice:8081 - registration status: 204
+2023-01-03 11:53:35,375 [INFO] com.eshoppingzone.ProductMicroserviceApplication [restartedMain] Started ProductMicroserviceApplication in 5.118 seconds (JVM running for 5.671)
+2023-01-03 11:58:34,991 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:03:35,000 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:08:35,006 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:13:18,236 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-03 12:13:18,236 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-01-03 12:13:18,238 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2023-01-03 12:13:18,465 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8081-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-12-16T02:25:55Z. Current time: 2023-01-03T12:13:18Z, a difference of 1590443461 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.eshoppingzone.productservice.entity.JwtUtil.extractAllClaims(JwtUtil.java:35)
+	at com.eshoppingzone.productservice.entity.JwtUtil.extractClaim(JwtUtil.java:30)
+	at com.eshoppingzone.productservice.entity.JwtUtil.extractUsername(JwtUtil.java:22)
+	at com.eshoppingzone.jwtfilter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:45)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-03 12:13:35,016 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:18:35,026 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:23:35,031 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:28:35,046 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:33:35,057 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:38:35,062 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:43:35,070 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:48:35,079 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:53:35,090 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 12:58:35,102 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:03:35,115 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:08:35,125 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:13:35,134 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:18:35,149 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:23:35,153 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:28:35,160 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:33:35,174 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:38:35,180 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:43:35,196 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:48:35,205 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:53:35,215 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 13:58:35,219 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:03:35,231 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:08:35,246 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:13:35,255 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:18:35,264 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:23:35,274 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:28:35,289 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:33:35,292 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:38:35,307 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:43:35,324 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:48:35,337 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:53:35,338 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 14:58:35,341 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:03:35,344 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:08:35,347 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:13:35,351 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:18:35,354 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:23:35,356 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:28:35,359 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:33:35,373 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:38:35,389 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-01-03 15:43:35,400 [INFO] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
